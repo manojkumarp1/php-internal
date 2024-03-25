@@ -1,8 +1,9 @@
 <?php
     include("connection.php");
     $pname=$_POST["pname"];
-
+    
     $sql="select * from register where pname='$pname'";
+    
 
     $res=$conn->query($sql);
     if($res -> num_rows > 0)
